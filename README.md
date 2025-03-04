@@ -1,7 +1,7 @@
 🎀 **Chá do Miguel** 🎀  
 Seja bem-vindo ao Chá do Miguel, um cantinho especial para celebrar a chegada desse pacotinho de amor! 👶💙
 
-<img src="![alt text](<public/Prancheta 1.png>)">
+![alt text](<public/Prancheta 1.png>)
 
 🚀 **Como Começar**  
 Para rodar o projeto localmente, basta usar um dos comandos abaixo:
