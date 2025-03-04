@@ -1,0 +1,81 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model BabyShower {
+  id                String             @id @default(uuid())
+  name              String
+  slug              String
+  description       String
+  avatarImageUrl    String
+  coverImageUrl     String
+  menuCategories    MenuCategory[]
+  products          Product[]
+  giftConfirmations GiftConfirmation[]
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @updatedAt
+}
+
+model MenuCategory {
+  id        String     @id @default(uuid())
+  name      String
+  baby      BabyShower @relation(fields: [babyId], references: [id], onDelete: Cascade)
+  babyId    String
+  products  Product[]
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+}
+
+model Product {
+  id             String                    @id @default(uuid())
+  name           String
+  description    String
+  imageUrl       String
+  baby           BabyShower                @relation(fields: [babyId], references: [id], onDelete: Cascade)
+  babyId         String
+  menuCategory   MenuCategory              @relation(fields: [menuCategoryId], references: [id], onDelete: Cascade)
+  giftProducts   GiftConfirmationProduct[] // Relacionamento correto
+  menuCategoryId String
+  createdAt      DateTime                  @default(now())
+  updatedAt      DateTime                  @updatedAt
+  productStock   Boolean                   @default(true)
+  stockQuantity  Int                       @default(0) // Quantidade disponível em estoque
+}
+
+model GiftConfirmation {
+  id           Int                       @id @default(autoincrement())
+  name         String
+  email        String
+  baby         BabyShower                @relation(fields: [babyId], references: [id], onDelete: Cascade)
+  babyId       String
+  giftProducts GiftConfirmationProduct[] // 🆕 Agora pode ter vários produtos
+  createdAt    DateTime                  @default(now())
+}
+
+model GiftConfirmationProduct {
+  id                 String           @id @default(uuid())
+  giftConfirmation   GiftConfirmation @relation(fields: [giftConfirmationId], references: [id], onDelete: Cascade)
+  giftConfirmationId Int
+  product            Product          @relation(fields: [productId], references: [id], onDelete: Cascade)
+  productId          String
+  productName        String
+  quantity           Int
+  createdAt          DateTime         @default(now())
+}
+
+model Confirmation {
+  id    Int    @id @default(autoincrement())
+  name  String
+  email String
+}
