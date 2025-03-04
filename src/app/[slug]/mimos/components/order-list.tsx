@@ -50,7 +50,7 @@ const OrderList = ({ mimos }: OrderListProps) => {
         <Card key={mimo.id}>
           <CardContent className="p-5 space-y-4">
             <div className="bg-sky-500 text-white w-fit rounded-full px-2 py-1 text-xs font-semibold">
-              Aguardando
+              Mimo escolhido!
             </div>
             <div className="flex items-center gap-2">
               <div className="relative h-5 w-5">
@@ -70,12 +70,20 @@ const OrderList = ({ mimos }: OrderListProps) => {
                   <div className="h-5 w-5 flex items-center justify-center rounded-full bg-gray-400 text-white text-xs font-semibold">
                     {giftProduct.quantity}
                   </div>
-                  <p className="text-sm">{giftProduct.product.name}</p>
+                  <p className="text-sm min-w-max-[60%]">
+                    {giftProduct.product.name}
+                  </p>
+                  <div className="relative h-20 w-20">
+                    <Image
+                      src={giftProduct.product.imageUrl}
+                      alt={giftProduct.product.id}
+                      fill
+                      className="object-fill"
+                    />
+                  </div>
                 </div>
               ))}
             </div>
-            <Separator />
-            <div className="text-sm font-medium">R$ TOTAL RENDER</div>
           </CardContent>
         </Card>
       ))}

@@ -53,6 +53,9 @@ const BabyShower = async ({ params }: BabyShowerProps) => {
         <Button className="rounded-full" asChild>
           <ButtonConfirmation />
         </Button>
+        <Button className="rounded-full" asChild>
+          <Link href={`${slug}/pixpage`}>Ajude com um Pix</Link>
+        </Button>
       </div>
     </div>
   );

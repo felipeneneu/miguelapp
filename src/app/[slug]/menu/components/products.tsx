@@ -20,7 +20,7 @@ const Products = ({ products }: ProductsProps) => {
           {/* ESQUERDA */}
           <div>
             <h3 className="font-medium text-sm pb-1">{product.name}</h3>
-            <p className="line-clamp-2 text-sm text-muted-foreground">
+            <p className="line-clamp-2 text-sm text-muted-foreground whitespace-pre-line">
               {product.description}
             </p>
           </div>

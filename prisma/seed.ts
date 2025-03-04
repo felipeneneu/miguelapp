@@ -27,9 +27,9 @@ const main = async () => {
     await tx.product.createMany({
       data: [
         {
-          name: "🌟Fraldinha G do Miguel🌟",
+          name: "🌟 Fraldinha G",
           description:
-            "💧 **Toalhas Umedecidas do Miguel** 💧<br /><br />**Essas toalhinhas são perfeitas para manter o Miguel limpinho e confortável a qualquer hora do dia!** 👶💙<br /><br />Com uma fórmula suave e delicada, as toalhas umedecidas ajudam a manter a pele do Miguel fresquinha e protegida. Seja para a troca de fralda ou para um banho rápido, essas toalhinhas são sempre uma boa escolha para momentos de cuidado e carinho.<br /><br />🔔 **Importante:** A imagem que aparece aqui é apenas uma sugestão de estilo. O item real pode variar, mas o carinho e a suavidade são garantidos!",
+            "💧 Toalhas Umedecidas do Miguel 💧 Essas toalhinhas são perfeitas para manter o Miguel limpinho e confortável a qualquer hora do dia! 👶💙 Com uma fórmula suave e delicada, as toalhas umedecidas ajudam a manter a pele do Miguel fresquinha e protegida. Seja para a troca de fralda ou para um banho rápido, essas toalhinhas são sempre uma boa escolha para momentos de cuidado e carinho. 🔔 Importante: A imagem que aparece aqui é apenas uma sugestão de estilo. O item real pode variar, mas o carinho e a suavidade são garantidos!",
           productStock: true,
           stockQuantity: 10,
           imageUrl:
@@ -38,9 +38,9 @@ const main = async () => {
           babyId: babyShower.id,
         },
         {
-          name: "🌟Fraldinha M do Miguel🌟",
+          name: "🌟Fraldinha M",
           description:
-            "🌟 **Fraldinha M do Miguel** 🌟\n\n **Miguel está crescendo rapidinho, e essa fraldinha M foi escolhida com muito carinho para acompanhar cada momentinho especial!** 👶💙\n\n Uma fraldinha macia, confortável e perfeita para garantir o maior conforto para o nosso pacotinho de amor. Vai ser uma alegria ver o Miguel usando!\n\n🔔 **Importante:** A imagem que aparece aqui é apenas uma sugestão de estilo. O item real pode variar, mas o carinho e o conforto são garantidos!",
+            "🌟 Fraldinha M do Miguel 🌟 Miguel está crescendo rapidinho, e essa fraldinha M foi escolhida com muito carinho para acompanhar cada momentinho especial! 👶💙 Uma fraldinha macia, confortável e perfeita para garantir o maior conforto para o nosso pacotinho de amor. Vai ser uma alegria ver o Miguel usando! 🔔 Importante: A imagem que aparece aqui é apenas uma sugestão de estilo. O item real pode variar, mas o carinho e o conforto são garantidos!",
           productStock: true,
           stockQuantity: 10,
           imageUrl:
@@ -62,7 +62,7 @@ const main = async () => {
         {
           name: "💧Toalhas Umedecidas do Miguel💧",
           description:
-            "💧 **Toalhas Umedecidas do Miguel** 💧\n\n **Essas toalhinhas são perfeitas para manter o Miguel limpinho e confortável a qualquer hora do dia!** 👶💙\n\nCom uma fórmula suave e delicada, as toalhas umedecidas ajudam a manter a pele do Miguel fresquinha e protegida. Seja para a troca de fralda ou para um banho rápido, essas toalhinhas são sempre uma boa escolha para momentos de cuidado e carinho.\n\n🔔 **Importante:** A imagem que aparece aqui é apenas uma sugestão de estilo. O item real pode variar, mas o carinho e a suavidade são garantidos!'",
+            "💧 Toalhas Umedecidas do Miguel 💧 Essas toalhinhas são perfeitas para manter o Miguel limpinho e confortável a qualquer hora do dia! 👶💙Com uma fórmula suave e delicada, as toalhas umedecidas ajudam a manter a pele do Miguel fresquinha e protegida. Seja para a troca de fralda ou para um banho rápido, essas toalhinhas são sempre uma boa escolha para momentos de cuidado e carinho.🔔 Importante: A imagem que aparece aqui é apenas uma sugestão de estilo. O item real pode variar, mas o carinho e a suavidade são garantidos!'",
           productStock: true,
           stockQuantity: 10,
           imageUrl:
@@ -73,7 +73,7 @@ const main = async () => {
         {
           name: "Creme para Assaduras do Miguel 👶💙",
           description:
-            "**O Miguel merece todo o cuidado e conforto, e esse creme para assaduras vai garantir que ele fique sempre protegido e sem desconforto.** 👶💙\n\n Formulado especialmente para a pele sensível do Miguel, esse creme é ideal para prevenir e tratar as assaduras, mantendo a pele do bebê hidratada e saudável. Cada aplicação é uma dose de carinho e cuidado! \n\n 🔔 **Importante:** A imagem que aparece aqui é apenas uma sugestão de estilo. O item real pode variar, mas o carinho e a proteção são garantidos!",
+            "O Miguel merece todo o cuidado e conforto, e esse creme para assaduras vai garantir que ele fique sempre protegido e sem desconforto. 👶💙 Formulado especialmente para a pele sensível do Miguel, esse creme é ideal para prevenir e tratar as assaduras, mantendo a pele do bebê hidratada e saudável. Cada aplicação é uma dose de carinho e cuidado!  🔔 Importante: A imagem que aparece aqui é apenas uma sugestão de estilo. O item real pode variar, mas o carinho e a proteção são garantidos!",
           productStock: true,
           stockQuantity: 10,
           imageUrl:
