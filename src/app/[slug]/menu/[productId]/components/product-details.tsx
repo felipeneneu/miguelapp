@@ -78,8 +78,8 @@ const ProductDetails = ({ product }: ProductDetailsProps) => {
           </div>
 
           {/* Sobre o Item */}
-          <ScrollArea className="h-full">
-            <div className="mt-6 space-y-3">
+          <ScrollArea className="h-2/3 bg-white pt-4 pb-7">
+            <div className="mt-3 space-y-3 h-">
               <h4 className="font-semibold">Sobre</h4>
               <p className="text-sm text-muted-foreground">
                 {product.description}

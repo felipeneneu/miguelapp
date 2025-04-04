@@ -9,7 +9,7 @@ import { toast } from "sonner";
 import { useRouter } from "next/navigation";
 
 const pixKey =
-  "00020126580014BR.GOV.BCB.PIX0114SEU-EMAIL@PIX5204000053039865802BR5920Nome Completo6009Sao Paulo62140510MEUQR1234";
+  "00020101021126750014br.gov.bcb.pix01360e34420b-c257-4436-9a6b-4080d7e17cec0213Chá do Miguel5204000053039865802BR5923Beatriz Oliveira da Sil6009SAO PAULO61080131010062150511ChadoMiguel630418DD";
 
 const PixPage = () => {
   const [copied, setCopied] = useState(false);
