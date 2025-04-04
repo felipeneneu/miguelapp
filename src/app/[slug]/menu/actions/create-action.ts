@@ -37,13 +37,7 @@ export const createGift = async (input: CreateGiftConfirmationInput) => {
   if (!baby) {
     throw new Error("Baby not found");
   }
-  const productsWithPrices = await db.product.findMany({
-    where: {
-      id: {
-        in: input.products.map((product) => product.id),
-      },
-    },
-  });
+
   await db.giftConfirmation.create({
     data: {
       name: input.name,
@@ -55,7 +49,6 @@ export const createGift = async (input: CreateGiftConfirmationInput) => {
             productId: product.id,
             quantity: product.quantity,
             productName: product.name,
-            price: productsWithPrices.find((p) => p.id === product.id)!.price,
           })),
         },
       },
