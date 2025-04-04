@@ -10,8 +10,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Miguel está chegando",
-  description: "Nosso bebe está chegando",
+  title: "Chá do Miguel",
+  description: "Venha celebrar a chegada do nosso pequeno Miguel com a gente!",
 };
 
 export default function RootLayout({

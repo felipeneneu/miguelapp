@@ -55,7 +55,9 @@ const BabyShower = async ({ params }: BabyShowerProps) => {
             <ButtonConfirmation />
           </Button>
           <Button className="rounded-full" asChild>
-            <Link href={`${slug}/pixpage`}>Ajude com um Pix</Link>
+            <Link href={`${slug}/pixpage`}>
+              Quer ajudar com um Pix? (Só se quiser!)
+            </Link>
           </Button>
           <Button className="rounded-full" asChild>
             <a
@@ -65,15 +67,17 @@ const BabyShower = async ({ params }: BabyShowerProps) => {
               Localização
             </a>
           </Button>
-          <Alert>
-            <PartyPopper className="h-4 w-4 " />
-            <AlertTitle>Aviso importante! 🍻🚫</AlertTitle>
-            <AlertDescription>
-              Não teremos bebidas alcoólicas no chá do Miguel, mas fique à
-              vontade para trazer a sua, caso queira brindar esse momento
-              especial com a gente! 💙🥳
-            </AlertDescription>
-          </Alert>
+          <div>
+            <Alert className="mt-10">
+              <PartyPopper className="h-4 w-4 " />
+              <AlertTitle>Aviso importante! 🍻🚫</AlertTitle>
+              <AlertDescription>
+                Não teremos bebidas alcoólicas no chá do Miguel, mas fique à
+                vontade para trazer a sua, caso queira brindar esse momento
+                especial com a gente! 💙🥳
+              </AlertDescription>
+            </Alert>
+          </div>
         </div>
       </div>
     </div>
