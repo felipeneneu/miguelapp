@@ -31,7 +31,7 @@ interface OrderListProps {
 const OrderList = ({ mimos }: OrderListProps) => {
   const { slug } = useParams<{ slug: string }>();
   const router = useRouter();
-  const handleBackClick = () => router.push(`/${slug}/menu`);
+  const handleBackClick = () => router.push(`/${slug}`);
   return (
     <div className="space-y-6 p-6">
       <Button
