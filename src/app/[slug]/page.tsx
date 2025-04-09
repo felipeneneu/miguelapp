@@ -45,21 +45,21 @@ const BabyShower = async ({ params }: BabyShowerProps) => {
           </p>
         </div>
         <div className="pt-12 space-y-2 flex flex-col justify-center flex-1 w-full gap-2 pb-12">
-          <Button className="rounded-full" asChild>
+          <Button className="rounded-full">
             <Link href={`${slug}/menu`}>Lista de Presentes</Link>
           </Button>
-          <Button className="rounded-full" asChild>
+          <Button className="rounded-full">
             <Link href={`${slug}/mimos`}>Ver seus mimos</Link>
           </Button>
-          <Button className="rounded-full" asChild>
+          <Button className="rounded-full">
             <ButtonConfirmation />
           </Button>
-          <Button className="rounded-full" asChild>
+          <Button className="rounded-full">
             <Link href={`${slug}/pixpage`}>
               Quer ajudar com um Pix? (Só se quiser!)
             </Link>
           </Button>
-          <Button className="rounded-full" asChild>
+          <Button className="rounded-full">
             <a
               href="https://maps.app.goo.gl/sMEq2mv2wCj73z8z9"
               className="text-sm"
