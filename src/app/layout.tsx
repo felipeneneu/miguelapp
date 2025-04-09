@@ -21,6 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <meta
+        name="google-site-verification"
+        content="5GNOPB8j4roUbpzyhHnA8AJyKdWaeOlRowq9lkHCXM0"
+      />
       <body className={`${poppins.className} antialiased`}>
         <CardProvider>{children}</CardProvider>
         <Toaster />
