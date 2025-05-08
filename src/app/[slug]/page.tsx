@@ -38,19 +38,22 @@ const BabyShower = async ({ params }: BabyShowerProps) => {
         </div>
         <div className="pt-8 text-center space-y-2 text-sky-500">
           <h3 className="text-3xl  text-sky-500 font-black">Dia 10/05/2025</h3>
-          <h3 className="text-3xl font-black">está chegando! 💙</h3>
+          <h3 className="text-3xl  text-sky-500 font-black">
+            A partir das 15:00hs
+          </h3>
+
           <p>
             Escolha um presentinho com carinho e faça parte desse momento tão
             especial.
           </p>
         </div>
         <div className="pt-12 space-y-2 flex flex-col justify-center flex-1 w-full gap-2 pb-12">
-          <Button className="rounded-full" variant="default" asChild>
+          {/* <Button className="rounded-full" variant="default" asChild>
             <Link href={`${slug}/menu`}>Lista de Presentes</Link>
-          </Button>
-          <Button className="rounded-full" variant="default" asChild>
+          </Button> */}
+          {/* <Button className="rounded-full" variant="default" asChild>
             <Link href={`${slug}/mimos`}>Ver seus mimos</Link>
-          </Button>
+          </Button> */}
           <Button className="rounded-full" variant="default" asChild>
             <ButtonConfirmation />
           </Button>
