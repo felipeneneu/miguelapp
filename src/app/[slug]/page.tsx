@@ -11,6 +11,11 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { PartyPopper } from "lucide-react";
 
 const getBG = img;
+const address =
+  "R. Fortunato Belotto, 313 - Jardim Cila de Lucio Bauab, Jaú - SP, 17209-313";
+const googleMapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+  address
+)}`;
 
 interface BabyShowerProps {
   params: Promise<{ slug: string }>;
@@ -63,10 +68,7 @@ const BabyShower = async ({ params }: BabyShowerProps) => {
             </Link>
           </Button>
           <Button className="rounded-full" variant="default" asChild>
-            <a
-              href="https://maps.app.goo.gl/sMEq2mv2wCj73z8z9"
-              className="text-sm"
-            >
+            <a href={googleMapsLink} className="text-sm">
               Localização
             </a>
           </Button>
