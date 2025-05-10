@@ -28,22 +28,22 @@ const BabyShower = async ({ params }: BabyShowerProps) => {
     return notFound();
   }
   return (
-    <div className="h-screen w-screen flex flex-col items-center justify-center px-6 relative top-0 left-0">
+    <div className="h-screen w-screen flex flex-col items-center justify-center px-6 relative top-0 left-0 overflow-hidden">
       <Image
         src={getBG}
         alt="bg"
         className=" absolute -z-10 object-cover w-full top-0"
       />
-      <div className="mt-[60%]">
-        <div className="flex flex-col items-center gap-2 mt-[300px]">
+      <div className="">
+        <div className="flex flex-col items-center gap-2 iphone:mt-[390px] xs:mt-48 iphonepro:mt-40">
           <div className="flex flex-col justify-center items-center gap-2 ">
             <SvgComponent className="-mt-[100px]" />
             <MiguelName className="-mt-12" />
           </div>
         </div>
         <div className="pt-8 text-center space-y-2 text-sky-500">
-          <h3 className="text-3xl  text-sky-500 font-black">Dia 10/05/2025</h3>
-          <h3 className="text-3xl  text-sky-500 font-black">
+          <h3 className="text-2xl  text-sky-500 font-black">Dia 10/05/2025</h3>
+          <h3 className="text-2xl  text-sky-500 font-black">
             A partir das 15:00hs
           </h3>
 
@@ -52,7 +52,7 @@ const BabyShower = async ({ params }: BabyShowerProps) => {
             especial.
           </p>
         </div>
-        <div className="pt-12 space-y-2 flex flex-col justify-center flex-1 w-full gap-2 pb-12">
+        <div className="pt-2 space-y-2 flex flex-col justify-center flex-1 w-full gap-2 pb-12">
           {/* <Button className="rounded-full" variant="default" asChild>
             <Link href={`${slug}/menu`}>Lista de Presentes</Link>
           </Button> */}

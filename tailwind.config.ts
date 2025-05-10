@@ -9,6 +9,20 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      iphone: "375px",
+      iphonepro: "390px",
+      galaxy: "360px",
+      xs: "414px",
+      tablet: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      laptop: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      desktop: "1280px",
+      // => @media (min-width: 1280px) { ... }
+    },
     extend: {
       colors: {
         background: "hsl(var(--background))",
